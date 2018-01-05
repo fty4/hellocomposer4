@@ -1,0 +1,24 @@
+{
+    "name": "fty4/hellocomposer",
+    "description": "Hello World for composer",
+    "type": "libary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Lecheler",
+            "email": "marco@task.media"
+        }
+    ],
+	"require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+	    "psr-4": {
+		    "fty4\\helloC\\": "src/"
+	    }
+     },
+     "scripts": {
+    	"test": "phpunit --exclude-group FITS --bootstrap vendor/autoload.php tests"
+  }
+}
